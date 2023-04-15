@@ -13,8 +13,8 @@ RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash - \
 
 WORKDIR /src
 COPY ["src/Website.WebApp/Website.WebApp.csproj", "Website.WebApp/"]
-RUN dotnet restore "src/Website.WebApp/Website.WebApp.csproj"
-COPY . .
+RUN dotnet restore "Website.WebApp/Website.WebApp.csproj"
+COPY src .
 WORKDIR "/src/Website.WebApp"
 RUN dotnet build "Website.WebApp.csproj" -c Release -o /app/build
 

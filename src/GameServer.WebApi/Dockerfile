@@ -6,8 +6,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["src/GameServer.WebApi/GameServer.WebApi.csproj", "GameServer.WebApi/"]
-RUN dotnet restore "src/GameServer.WebApi/GameServer.WebApi.csproj"
-COPY . .
+RUN dotnet restore "GameServer.WebApi/GameServer.WebApi.csproj"
+COPY src .
 WORKDIR "/src/GameServer.WebApi"
 RUN dotnet build "GameServer.WebApi.csproj" -c Release -o /app/build
 

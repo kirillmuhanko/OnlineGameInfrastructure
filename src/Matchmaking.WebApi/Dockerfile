@@ -6,8 +6,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["src/Matchmaking.WebApi/Matchmaking.WebApi.csproj", "Matchmaking.WebApi/"]
-RUN dotnet restore "src/Matchmaking.WebApi/Matchmaking.WebApi.csproj"
-COPY . .
+RUN dotnet restore "Matchmaking.WebApi/Matchmaking.WebApi.csproj"
+COPY src .
 WORKDIR "/src/Matchmaking.WebApi"
 RUN dotnet build "Matchmaking.WebApi.csproj" -c Release -o /app/build
 

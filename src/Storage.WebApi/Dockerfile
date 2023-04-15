@@ -6,8 +6,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["src/Storage.WebApi/Storage.WebApi.csproj", "Storage.WebApi/"]
-RUN dotnet restore "src/Storage.WebApi/Storage.WebApi.csproj"
-COPY . .
+RUN dotnet restore "Storage.WebApi/Storage.WebApi.csproj"
+COPY src .
 WORKDIR "/src/Storage.WebApi"
 RUN dotnet build "Storage.WebApi.csproj" -c Release -o /app/build
 

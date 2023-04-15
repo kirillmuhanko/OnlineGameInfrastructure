@@ -6,8 +6,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["src/Matchmaking.LoadBalancing.WebApi/Matchmaking.LoadBalancing.WebApi.csproj", "Matchmaking.LoadBalancing.WebApi/"]
-RUN dotnet restore "src/Matchmaking.LoadBalancing.WebApi/Matchmaking.LoadBalancing.WebApi.csproj"
-COPY . .
+RUN dotnet restore "Matchmaking.LoadBalancing.WebApi/Matchmaking.LoadBalancing.WebApi.csproj"
+COPY src .
 WORKDIR "/src/Matchmaking.LoadBalancing.WebApi"
 RUN dotnet build "Matchmaking.LoadBalancing.WebApi.csproj" -c Release -o /app/build
 

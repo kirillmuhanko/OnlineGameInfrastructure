@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  storage:
+    build:
+      context: ../
+      dockerfile: src/Storage.WebApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://0.0.0.0:3000"
+      ASPNETCORE_SWAGGER_URL: "http://localhost:3000/swagger/index.html"
+    ports:
+      - "3000:3000"
