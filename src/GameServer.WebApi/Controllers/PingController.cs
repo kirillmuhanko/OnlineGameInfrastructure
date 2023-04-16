@@ -1,4 +1,4 @@
-﻿using Common.Networking.Mvc.Base;
+﻿using Common.Networking.Mvc.Controllers;
 
 namespace GameServer.WebApi.Controllers;
 

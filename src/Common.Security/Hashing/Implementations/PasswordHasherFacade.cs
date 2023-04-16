@@ -1,4 +1,4 @@
-﻿using Common.Core.DependencyInjection.Attributes;
+﻿using Common.Models.DependencyInjection.Attributes;
 using Common.Security.Hashing.Abstractions;
 using Microsoft.AspNetCore.Identity;
 

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Common.Core.DependencyInjection.Attributes;
 using Common.Core.Mapping.Abstractions;
+using Common.Models.DependencyInjection.Attributes;
 
 namespace Common.Core.Mapping.Implementations;
 

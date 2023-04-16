@@ -1,4 +1,4 @@
-﻿namespace Common.Core.DependencyInjection.Attributes;
+﻿namespace Common.Models.DependencyInjection.Attributes;
 
 [AttributeUsage(AttributeTargets.Class)]
 public abstract class LifetimeAttributeBase : Attribute

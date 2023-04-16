@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Common.Core.DependencyInjection.Attributes;
+using Common.Models.DependencyInjection.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Common.Core.DependencyInjection.Extensions;
