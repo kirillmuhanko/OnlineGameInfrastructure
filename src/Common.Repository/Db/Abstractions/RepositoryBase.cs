@@ -1,9 +1,9 @@
-﻿using Common.Models.Database.Entities;
-using Common.Repository.Database.Abstractions;
+﻿using Common.Models.Db.Abstractions;
+using Common.Repository.Db.Contracts;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace Common.Repository.Database.Implementations;
+namespace Common.Repository.Db.Abstractions;
 
 public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : EntityBase
 {

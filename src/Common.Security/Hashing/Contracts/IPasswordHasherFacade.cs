@@ -1,4 +1,4 @@
-﻿namespace Common.Security.Hashing.Abstractions;
+﻿namespace Common.Security.Hashing.Contracts;
 
 public interface IPasswordHasherFacade
 {

@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
-using Common.Models.Database.Attributes;
-using Common.Models.Database.Options;
-using Common.Repository.Database.Abstractions;
+using Common.Models.Db.Abstractions;
+using Common.Models.Db.Attributes;
+using Common.Repository.Db.Contracts;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace Common.Repository.Database.Implementations;
+namespace Common.Repository.Db.Abstractions;
 
 public abstract class DatabaseContextBase : IDatabaseContextBase
 {

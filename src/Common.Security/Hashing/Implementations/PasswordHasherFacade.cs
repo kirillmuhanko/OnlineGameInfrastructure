@@ -1,5 +1,5 @@
 ﻿using Common.Models.DependencyInjection.Attributes;
-using Common.Security.Hashing.Abstractions;
+using Common.Security.Hashing.Contracts;
 using Microsoft.AspNetCore.Identity;
 
 namespace Common.Security.Hashing.Implementations;

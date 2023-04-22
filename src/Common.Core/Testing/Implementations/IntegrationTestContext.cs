@@ -3,7 +3,7 @@ using Common.Core.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Common.Core.Testing.Integration;
+namespace Common.Core.Testing.Implementations;
 
 public class IntegrationTestContext : IDisposable
 {

@@ -1,4 +1,4 @@
-﻿using Common.Networking.Mvc.Controllers;
+﻿using Common.Networking.Mvc.Abstractions;
 
 namespace Storage.WebApi.Controllers;
 

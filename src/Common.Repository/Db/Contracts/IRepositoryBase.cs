@@ -1,7 +1,7 @@
-﻿using Common.Models.Database.Entities;
+﻿using Common.Models.Db.Abstractions;
 using MongoDB.Bson;
 
-namespace Common.Repository.Database.Abstractions;
+namespace Common.Repository.Db.Contracts;
 
 public interface IRepositoryBase<TEntity> where TEntity : EntityBase
 {

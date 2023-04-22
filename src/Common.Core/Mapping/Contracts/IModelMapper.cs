@@ -1,4 +1,4 @@
-﻿namespace Common.Core.Mapping.Abstractions;
+﻿namespace Common.Core.Mapping.Contracts;
 
 public interface IModelMapper
 {

@@ -1,4 +1,4 @@
-﻿namespace Common.Models.Database.Attributes;
+﻿namespace Common.Models.Db.Attributes;
 
 [AttributeUsage(AttributeTargets.Class)]
 public class DatabaseCollectionNameAttribute : Attribute

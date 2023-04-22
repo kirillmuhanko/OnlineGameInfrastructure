@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using AutoMapper;
-using Common.Core.Mapping.Abstractions;
+using Common.Core.Mapping.Contracts;
 using Common.Core.Mapping.Implementations;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,6 +18,6 @@ public static class ModelMapperExtensions
 
         var mapper = mappingConfig.CreateMapper();
         services.AddSingleton(mapper);
-        services.AddSingleton<IModelMapper, ModelMapperFacade>();
+        services.AddSingleton<IModelMapper, ModelMapper>();
     }
 }

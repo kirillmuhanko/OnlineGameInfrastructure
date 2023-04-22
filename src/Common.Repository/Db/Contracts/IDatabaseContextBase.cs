@@ -1,6 +1,6 @@
 ﻿using MongoDB.Driver;
 
-namespace Common.Repository.Database.Abstractions;
+namespace Common.Repository.Db.Contracts;
 
 public interface IDatabaseContextBase
 {

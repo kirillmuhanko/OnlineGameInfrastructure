@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Common.Networking.Mvc.Controllers
+namespace Common.Networking.Mvc.Abstractions
 {
     [ApiController]
     [Route("[controller]")]

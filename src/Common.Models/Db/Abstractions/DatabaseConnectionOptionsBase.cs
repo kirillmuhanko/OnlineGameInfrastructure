@@ -1,4 +1,4 @@
-﻿namespace Common.Models.Database.Options;
+﻿namespace Common.Models.Db.Abstractions;
 
 public abstract class DatabaseConnectionOptionsBase
 {

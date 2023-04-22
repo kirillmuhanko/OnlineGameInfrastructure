@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using Common.Core.Mapping.Abstractions;
+using Common.Core.Mapping.Contracts;
 using Common.Models.DependencyInjection.Attributes;
 
 namespace Common.Core.Mapping.Implementations;
 
 [SingletonLifetime]
-public class ModelMapperFacade : IModelMapper
+public class ModelMapper : IModelMapper
 {
     private readonly IMapper _mapper;
 
-    public ModelMapperFacade(IMapper mapper)
+    public ModelMapper(IMapper mapper)
     {
         _mapper = mapper;
     }
